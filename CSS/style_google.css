@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+/* Header Stars  */
+
+
+.row-header ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  
+}
+
+.row-header ul li{
+    list-style: none;
+    margin: 13px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.row-header ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.row-header ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+.row-header ul li button{
+    padding: 12.5px 32px;
+    border: none;
+    background-color: #1A73E8;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 6px;
+    cursor: pointer;
+   
+}
+
+.row-header ul li button:hover{
+    background-color: #1061cc;
+   
+}
+
+.row-header ul li a i{
+   font-size: 20px;
+    margin-left: 10px;
+    color: #5F6368;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.row-header ul li a i:hover{
+   background-color: #dbdbdbaf;
+   padding: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+     
+ }
+
+
+
+
+ /* Main Starts */
+
+ .row-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+.row-main .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px;
+    position: relative;
+    
+}
+
+.search-box input{
+    width: 580px;
+    margin: auto 20px;
+    padding: 13px 105px 13px 45px;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    border: 1px solid gainsboro;
+    
+
+}
+
+.search-box input:hover{
+    box-shadow: 1px 1px 3px rgb(231, 231, 231), -1px -1px 3px rgb(231, 231, 231);
+
+}
+.search-box .fa-search{
+    position: absolute;
+    left: 7%;
+    color:rgb(189, 189, 189)
+}
+
+.search-box .search-right{
+    display: flex;
+    position: absolute;
+    right: 8%;
+    align-items: center;
+    
+    
+}
+
+.search-right .mic-class{
+   cursor: pointer; 
+   margin: 0 25px;
+   
+}
+
+.search-right .camera-class{
+    cursor: pointer;
+}
+
+
+
+
+.tooltrip-mic{
+    position: relative;
+}
+
+
+
+.tooltrip-text{
+    visibility: hidden;
+    position: absolute;
+    top: 140%;
+    left: 24%;
+    margin-left: -50%;
+    width: 100px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid rgb(122, 122, 122);
+
+}
+
+.tooltrip-text::after{
+    content: "";
+    position: absolute;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 100%;
+    left: 46%;
+
+}
+
+.tooltrip-mic:hover .tooltrip-text{
+    visibility: visible;
+}
+
+
+
+.tooltrip-camera{
+    position: relative;
+}
+
+
+.tooltrip-text-camera{
+    visibility: hidden;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    margin-left: -200%;
+    width: 100px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid rgb(122, 122, 122);
+
+}
+
+.tooltrip-text-camera::after{
+    content: "";
+    position: absolute;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 100%;
+    left: 46%;
+
+}
+
+.tooltrip-camera:hover .tooltrip-text-camera{
+    visibility: visible;
+}
+
+
+
+
+
+
+/* Button - i'm feeling lucky section starts */
+
+
+.button-lucky input{
+    margin: 14px 6px;
+    font-size: 15px;
+    border: 1px solid transparent;;
+    background-color: #F8F9FA;
+    padding: 11px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-lucky input:hover{
+   border: 1px solid gainsboro;
+   box-shadow: .5px .5px 1px rgb(231, 231, 231), -.5px -.5px 1px rgb(231, 231, 231);
+}
+
+
+/* google offereed in bangla, language section starts */
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.language .language-name{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #2020ac;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.language .language-name:hover{
+   text-decoration: underline;
+    
+}
+
+
+
+/* Footer Starts */
+
+    .row-footer{
+        margin: 189px 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        
+    }
+
+    .country{
+        background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        padding: 15px 0;
+        border-bottom: 1px rgb(214, 214, 214) solid;
+    }
+
+    .country p, .footer-manu-left, .footer-manu-right{
+        margin: 0 30px;
+        color: #6d6d6d;
+    }
+
+    .footer-manu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-top: 20px; */
+        background-color: #F2F2F2;
+        padding: 15px 0;
+        border-bottom: 1px silver solid;
+        
+    }
+
+    .footer-manu-left ul, .footer-manu-right ul{
+        display: flex;
+        list-style: none;
+        
+
+    }
+
+    .footer-manu-left ul li a, .footer-manu-right ul li a{
+       text-decoration: none;
+       margin-right: 30px;
+       color: #6d6d6d;
+       cursor: pointer;
+      
+    }
+
+    
+
+    .footer-manu-left ul li a:hover, .footer-manu-right ul li a:hover{
+       
+       text-decoration: underline;
+       
+     }
+
+   
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .footer-manu{
+       flex-direction: column;
+       
+    }
+
+    .row-footer{
+        margin: 155px 0px;
+        
+        
+    }
+
+
+    .footer-manu-left ul{
+        margin-bottom: 17px;
+    }
+    
+
+
+  }
